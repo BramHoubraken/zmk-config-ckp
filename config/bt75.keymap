@@ -9,68 +9,6 @@
 / {
 	keymap {
 		compatible = "zmk,keymap";
-		macros {
-				zed_em_kay: zed_em_kay {
-					label = "ZM_zed_em_kay";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings
-						= <&macro_press &kp LSHFT>
-						, <&macro_tap &kp Z &kp M &kp K>
-						, <&macro_release &kp LSHFT>
-						;
-				};
-				windows_lock: windows_lock {
-					label = "Windows_lock";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings
-						= <&macro_press &kp LGUI>
-						, <&macro_tap &kp L>
-						, <&macro_release &kp LGUI>
-						;
-				};
-				notepad_xml_language: notepad_xml_language {
-					label = "Notepad_XML_language";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings
-						= <&macro_press &kp LALT>
-						, <&macro_tap &kp L>
-						, <&macro_release &kp LALT>
-						, <&macro_tap &kp X>
-						;
-				};
-				notepad_xml_format: notepad_xml_format {
-					label = "Notepad_XML_format";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings
-						= <&macro_press &kp LCTRL &kp LALT &kp LSHIFT>
-						, <&macro_tap &kp B>
-						, <&macro_release &kp LCTRL &kp LALT &kp LSHIFT>
-						;
-				};
-				notepad_xml_combo: notepad_xml_combo {
-					label = "Notepad_XML_combo";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings
-						= <&macro_tap &notepad_xml_language>
-						, <&macro_tap &notepad_xml_format>
-						;
-				};
-				notepad_zoom_reset: notepad_zoom_reset {
-					label = "Notepad_zoom_reset";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings
-						= <&macro_press &kp LCTRL>
-						, <&macro_tap &kp KP_DIVIDE>
-						, <&macro_release &kp LCTRL>
-						;
-				};
-		};
 		default_layer {
 				// ------------------------------------------------------------------------------------------------------------
 				// | ESC | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F9  | F9  | F10 | F11 | F12 | PSCRN | INS | DEL	|
