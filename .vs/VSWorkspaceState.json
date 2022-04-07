@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\config",
+    "\\config\\boards",
+    "\\config\\boards\\arm",
+    "\\config\\boards\\arm\\bt75"
+  ],
+  "SelectedNode": "\\config\\bt75.keymap",
+  "PreviewInSolutionExplorer": false
+}
