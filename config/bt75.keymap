@@ -8,16 +8,16 @@
 
 
 / {
+	macros {
+		windows_lock: windows_lock {
+			label = "Windows_lock";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_press &kp LGUI>, <&macro_tap &kp L>, <&macro_release &kp LGUI>;
+		};
+	};
 	keymap {
 		compatible = "zmk,keymap";
-		macros {
-				windows_lock: windows_lock {
-					label = "Windows_lock";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings = <&macro_press &kp LGUI>, <&macro_tap &kp L>, <&macro_release &kp LGUI>;
-				};
-		};
 		default_layer {
 				// ------------------------------------------------------------------------------------------------------------
 				// | ESC | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F9  | F9  | F10 | F11 | F12 | PSCRN | INS | DEL	|
