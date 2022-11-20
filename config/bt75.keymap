@@ -82,7 +82,7 @@
 				&trans &trans &kp UP &trans &trans &trans &trans &trans &trans &trans &kp PSCRN &kp SLCK &trans &trans &trans
 				&trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans &trans &trans &trans &windows_lock &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &out OUT_BLE &out OUT_USB &trans &trans &notepad_zoom_reset &notepad_xml_combo &trans &trans &trans
-				&bootloader &reset &trans &trans &trans &trans &trans &trans &trans &trans
+				&bootloader &reset &trans &trans &trans &trans &trans &bt BT_PRV &trans &bt BT_NXT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
