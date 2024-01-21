@@ -9,6 +9,65 @@
 
 
 / {
+	macros {
+        windows_lock: windows_lock {
+            label = "Windows_lock";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>,
+                <&kp LGUI>;
+        };
+
+        notepad_xml_language: notepad_xml_language {
+            label = "Notepad_XML_language";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp X>;
+        };
+
+        ZMK_MACRO(
+			notepad_xml_format,
+			bindings =
+				<&macro_press &kp LCTRL &kp LALT &kp LSHIFT>,
+				<&macro_tap &kp B>,
+				<&macro_release &kp LCTRL &kp LALT &kp LSHIFT>;
+        )
+		
+		ZMK_MACRO(
+			notepad_xml_combo,
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings =
+				<&macro_tap &notepad_xml_language>,
+				<&macro_tap &notepad_xml_format>;
+        )
+
+        notepad_zoom_reset: notepad_zoom_reset {
+            label = "Notepad_zoom_reset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp BACKSLASH>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+    };
 	keymap {
 		compatible = "zmk,keymap";
 		default_layer {
