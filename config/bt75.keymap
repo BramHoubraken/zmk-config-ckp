@@ -110,11 +110,11 @@
 
         func_layer {
             bindings = <
-&tog 2  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans  &trans           &trans           &bl BL_TOG       &rgb_ug RGB_TOG
-&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans  &trans           &rgb_ug RGB_EFF  &rgb_ug RGB_SAI
-&trans  &trans          &kp UP_ARROW    &trans           &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans  &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SAD
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_HUI
-&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans  &bl BL_INC       &rgb_ug RGB_HUD
+&tog 2  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans                            &trans           &trans           &bl BL_TOG       &rgb_ug RGB_TOG
+&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans                            &trans           &rgb_ug RGB_EFF  &rgb_ug RGB_SAI
+&trans  &trans          &kp UP_ARROW    &trans           &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans                            &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SAD
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans                            &rgb_ug RGB_SPD  &rgb_ug RGB_HUI
+&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans           &trans      &trans           &rgb_ug RGB_COLOR_HSB(37,100,37)  &bl BL_INC       &rgb_ug RGB_HUD
         &trans          &trans          &trans           &trans  &trans  &trans  &trans  &rgb_ug RGB_BRD  &bl BL_DEC  &rgb_ug RGB_BRI
             >;
 
